@@ -148,6 +148,7 @@ section {
 #contact {
   background-color: #007bff38;
   padding: 20px;
+  padding-bottom: 40px;
   border-radius: 10px;
 }
 
@@ -173,22 +174,42 @@ button {
 button:hover {
   background-color: #555;
 }
-
-form {
-  display: flex;
-  flex-direction: column;
+.contact-form {
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-form label {
-  margin: 10px 0 5px;
+.form-group {
+  margin-bottom: 15px;
 }
 
-form input,
-form textarea {
+.form-group input,
+.form-group textarea {
+  width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  display: none; /* Hidden by default */
+}
+
+/* Show error message when input is invalid */
+.form-group input:invalid + .error-message,
+.form-group textarea:invalid + .error-message {
+  display: block;
 }
 
 .portfolio-item {

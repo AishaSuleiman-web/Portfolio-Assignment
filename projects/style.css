@@ -1,0 +1,59 @@
+/* General Styles */
+body {
+  background-color: #f4f4f4;
+}
+
+.portfolio-container {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; */
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-card img:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h2 {
+  font-size: 3.5rem;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 15px 20px;
+  line-height: 1.5;
+  text-align: justify
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+}

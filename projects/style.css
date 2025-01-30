@@ -4,11 +4,8 @@ body {
 }
 
 .portfolio-container {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; */
   padding: 20px;
+  padding: 50px 0;
 }
 
 .project-card {
@@ -16,7 +13,6 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 60%;
   margin: 0 auto;
   text-align: center;
 }

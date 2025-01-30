@@ -8,7 +8,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="portfolio-container">
+    <nav class="navbar">
+      <div class="container">
+        <!-- Logo -->
+        <a href="/" class="logo">< Aisha Codes /></a>
+  
+        <!-- Hamburger Menu Icon (for mobile) -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+  
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="portfolio-container container">
       <!-- Project 1 -->
       <div class="project-card">
         <img src="../images/ecommerce-banner.jpg" alt="Project 1" />
@@ -103,5 +125,15 @@
         </p>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
